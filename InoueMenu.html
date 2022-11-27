@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Inoue</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon.png">
+        
+
+        <style>
+            body{
+                background-color: #ebe1ce;
+                background-image: url("InoueBG.png");
+                background-size: 1400px;
+            }
+
+            ::selection{
+                background-color: #ebe1ce;
+                color: #1D1A05;
+            }
+
+            .prevent-select {
+                -webkit-user-select: none; 
+                -ms-user-select: none; 
+                user-select: none; 
+            }
+
+            a{
+                text-decoration: none;
+                color: #1D1A05;
+            }
+
+            table{
+                position: absolute;
+                top: 12%;
+                left: 62%;
+            }
+
+            th{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                color: #1D1A05;
+                margin-left: 50px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            #logo{
+                display: inline-block;
+                position: absolute;
+                top: 60px;
+                left: 80px;
+            }
+
+            #box{
+                background-color: #ebe1ce;
+                border-radius: 10px;
+
+                position: absolute;
+                top: 8%;
+                left: 5%;
+                padding: 250px;
+                padding-right: 900px;
+                padding-bottom: 270px;
+
+                align-items: center;
+                background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+                box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                            -8px -8px 12px 0 rgba(255, 255, 255, 0.155);
+
+                background: linear-gradient(135deg, rgba(148, 145, 145, 0.192), rgba(255,255,255,0.25));
+            }
+
+            .underline-effect {
+                display: inline-block;
+                position: relative;
+            }
+
+            .underline-effect:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: #ed3c1f;
+                transform-origin: bottom right;
+                transition: transform 0.3s ease-out;
+            }
+
+            .underline-effect:hover:after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+
+            .video_vid{
+                display: block;
+                                
+            }
+
+            .overlay{
+                position: absolute;
+                top: 170px;
+                left: 86px;
+                width: 534px;
+                height: 300px;
+                background: rgba(0, 0, 0, 0.6);
+                opacity: 0;
+                transition: 0.25s ease-in;
+            }
+
+            .overlay > *{
+                transform: translateY(20px);
+                transition: 0.25s ease-in;
+            }
+
+            .overlay:hover{
+                opacity: 1;
+            }
+
+            .overlay:hover > *{
+                transform: translateY(0);
+            }
+
+            .overlay2{
+                position: absolute;
+                top: 170px;
+                left: 666px;
+                width: 534px;
+                height: 300px;
+                background: rgba(0, 0, 0, 0.6);
+                opacity: 0;
+                transition: 0.25s ease-in;
+            }
+
+            .overlay2 > *{
+                transform: translateY(20px);
+                transition: 0.25s ease-in;
+            }
+
+            .overlay2:hover{
+                opacity: 1;
+            }
+
+            .overlay2:hover > *{
+                transform: translateY(0);
+            }
+
+            .overlaytext{
+                color: #ebe1ce;
+                
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+
+                text-align: center;
+
+            }
+
+            #sushi{
+                position: absolute;
+                top: 170px;
+                right: 747px;
+            }
+
+            #sashimi{
+                position: absolute;
+                top: 170px;
+                left: 666px;
+
+                display: inline-block;
+            }
+
+            video{
+                width: 533px;
+                display: inline-block;
+            }
+
+            h1{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 20px;
+                display: inline-block;
+
+                position: absolute;
+                top: 470px;
+            }
+
+            h6{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 10px;
+                display: inline-block;
+
+                position: absolute;
+                top: 600px;
+                right: 1225px; 
+            }
+
+            #sushitext{
+                left: 300px;
+            }
+
+            #sashimitext{
+                left: 900px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section class="prevent-select">
+            <div id="box" > </div>
+
+            <img src="INOUE.png" alt="INOUE Logo" width="100" id="logo">
+            <table>
+                <tr>
+                    <th class="underline-effect"><a href="index.html">Home</a></th>
+                    <th class="underline-effect"><a href="InoueMenu.html">Menu</a></th>
+                    <th class="underline-effect"><a href="InoueAboutMe.html">About</a></th>
+                </tr>
+            </table>
+
+            
+            <h1 id="sushitext">Sushi Rolls</h1>
+            <h1 id="sashimitext">Sashimi</h1>
+            <h6> All Rights Reserved • 2022</h6>
+        </section>
+
+        <div class="video">
+            <video class="video_vid" id="sushi" autoplay loop>
+                <source src="sushi.mp4" type="video/mp4">
+            </video>
+            <div class="overlay">
+                <div class="overlaytext">
+                    <p>
+                    <br>
+                    California Roll
+                    <br>
+                    •
+                    <br>
+                    Crunch Roll
+                    <br>
+                    •
+                    <br>
+                    Dragon Roll
+                    <br>
+                    •
+                    <br>
+                    Dynamite Roll
+                    <br>
+                    •
+                    <br>
+                    Spicy Tuna Roll
+                    <br>
+                    •
+                    <br>
+                    Tiger Roll
+                    <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="video">
+            <video class="video_vid" id="sashimi" autoplay loop>
+                <source src="sashimi.mp4" type="video/mp4">
+            </video>
+            <div class="overlay2">
+                <div class="overlaytext">
+                    <p>
+                    <br>
+                    Ebi (Shrimp)
+                    <br>
+                    •
+                    <br>
+                    Ika (Squid)
+                    <br>
+                    •
+                    <br>
+                    Maguro (Tuna)
+                    <br>
+                    •
+                    <br>
+                    Sake (Salmon)
+                    <br>
+                    •
+                    <br>
+                    Smoked Salmon
+                    <br>
+                    •
+                    <br>
+                    Tako (octopus)
+                    <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Inoue</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon.png">
+        
+
+        <style>
+            body{
+                background-color: #ebe1ce;
+                background-image: url("InoueBG.png");
+                background-size: 1400px;
+            }
+
+            ::selection{
+                background-color: #1D1A05;
+                color: #ebe1ce;
+            }
+
+            .prevent-select {
+                -webkit-user-select: none; 
+                -ms-user-select: none; 
+                user-select: none; 
+            }
+
+            a{
+                text-decoration: none;
+                color: #1D1A05;
+            }
+
+            table{
+                position: absolute;
+                top: 12%;
+                left: 62%;
+            }
+
+            th{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                color: #1D1A05;
+                margin-left: 50px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            #logo{
+                display: inline-block;
+                position: absolute;
+                top: 60px;
+                left: 80px;
+            }
+
+            #box{
+                background-color: #ebe1ce;
+                border-radius: 10px;
+
+                position: absolute;
+                top: 8%;
+                left: 5%;
+                padding: 250px;
+                padding-right: 900px;
+                padding-bottom: 270px;
+
+                align-items: center;
+                background: linear-gradient(-45deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+                box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+                            -8px -8px 12px 0 rgba(255, 255, 255, 0.155);
+
+                background: linear-gradient(135deg, rgba(148, 145, 145, 0.192), rgba(255,255,255,0.25));
+            }
+
+            .underline-effect {
+                display: inline-block;
+                position: relative;
+            }
+
+            .underline-effect:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: #ed3c1f;
+                transform-origin: bottom right;
+                transition: transform 0.3s ease-out;
+            }
+
+            .underline-effect:hover:after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+
+            iframe{
+                position: absolute;
+                top: 110px;
+                left: 270px;
+            }
+
+            h1{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 800;
+                font-size: 70px;
+                display: inline-block;
+                position: absolute;
+                top: 90px; 
+                left: 430px;
+            }
+
+            h6{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 10px;
+                display: inline-block;
+
+                position: absolute;
+                top: 600px;
+                right: 1225px; 
+            }
+
+            video{
+                width: 300px;
+                display: inline-block;
+
+                position: absolute;
+                top: 150px;
+                left: 100px;
+            }
+
+            .text{
+                margin: 100px;
+                padding-right: 80px;
+
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+            }
+
+            #text1{
+                position: absolute;
+                top: 150px;
+                left: 335px;
+            }
+
+            #text2{
+                position: absolute;
+                top: 250px;
+                left: 335px;
+            }
+
+            #toro{
+                font-weight: 600;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <section class="prevent-select">
+            <div id="box" > </div>
+
+            <img src="INOUE.png" alt="INOUE Logo" width="100" id="logo">
+            <table>
+                <tr>
+                    <th class="underline-effect"><a href="index.html">Home</a></th>
+                    <th class="underline-effect"><a href="InoueMenu.html">Menu</a></th>
+                    <th class="underline-effect"><a href="InoueAboutMe.html">About</a></th>
+                </tr>
+            </table>
+
+            <video class="video_vid" id="sushi" autoplay loop>
+                <source src="eating.mp4" type="video/mp4">
+            </video>
+
+            <h1>Our Story</h1>
+            <h6> All Rights Reserved • 2022</h6>
+        </section>
+
+        <p class="text" id="text1">Xander Liam Keith M. Soliman is a Grade 9 student at Philippine Science High School - Central Luzon Campus and the founder of Inoue. With the rising popularity of Japanese cuisine in the Philippines,  Xander wanted to replicate that experience with utmost elegance and respect for the craft.</p>
+        <p class="text" id="text2">Our brand derives from a specific bubbly cat under Sony named <a href="https://en.wikipedia.org/wiki/Toro_Inoue" id="toro" class="underline-effect" target="_blank">Toro Inoue</a>. The video beside this text inspired Xander to base his work loosely around him with a modern twist.</p>
+
+    </body>
+</html>
